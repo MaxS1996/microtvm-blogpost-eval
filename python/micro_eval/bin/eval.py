@@ -337,7 +337,7 @@ def parse_args():
 
     parser.add_argument('--validate-against', const='cpu', nargs='?',
                         help='Validate on-device output against the given runtime (by default, cpu)')
-    parser.add_argument('--zephyr-board', default='nucleo_f746zg',
+    parser.add_argument('--zephyr-board', default='nucleo_l496zg',
                         help='Name of the Zephyr board to use for micro_dev inference.')
     parser.add_argument('--west-cmd', default='west', help='Path to `west` binary.')
     model_util.define_cifar10_conv_op_impl(parser)
