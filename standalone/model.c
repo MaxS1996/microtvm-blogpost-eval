@@ -1,4 +1,4 @@
-// tvm target: c -keys=arm_cpu,cpu -link-params=1 -mcpu=cortex-m7 -model=stm32f746xx -runtime=c -system-lib=1
+// tvm target: c -keys=arm_cpu,cpu -link-params=1 -mcpu=cortex-m4 -model=stm32l496xx -runtime=c -system-lib=1
 #include "tvm/runtime/c_runtime_api.h"
 #include "tvm/runtime/c_backend_api.h"
 #include <math.h>

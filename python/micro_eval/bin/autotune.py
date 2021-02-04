@@ -14,7 +14,7 @@
 # KIND, either express or implied.  See the License for the
 # specific language governing permissions and limitations
 # under the License.
-"""Auto-tuning on ARM Cortex-M7 STM32F746 Boards."""
+"""Auto-tuning on ARM Cortex-M4 STM32L496 Boards."""
 import argparse
 import contextlib
 import logging
@@ -50,7 +50,7 @@ from micro_eval.util import model_util
 #
 # Once you have the serial numbers, create an OpenOCD `.cfg` file for each one,
 # using the following template:
-#   source [find target/stm32f7x.cfg]
+#   source [find target/stm32l4x.cfg]
 #   hla_serial $SERIAL_NUMBER
 #   gdb_port $GDB_PORT
 #   tcl_port $TCL_PORT

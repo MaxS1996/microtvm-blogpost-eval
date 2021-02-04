@@ -216,7 +216,7 @@ class TunableModel(metaclass=abc.ABCMeta):
 
 
 SETTING_TO_TARGET_AND_CONTEXT = {
-  'micro_dev': ('c -keys=arm_cpu -mcpu=cortex-m7 -link-params -model=stm32f746xx -runtime=c -system-lib=1', 'micro_dev'),
+  'micro_dev': ('c -keys=arm_cpu -mcpu=cortex-m4 -link-params -model=stm32l496xx -runtime=c -system-lib=1', 'micro_dev'),
   'interp': ('llvm', 'cpu'),
   'cpu': ('llvm', 'cpu'),
 }
