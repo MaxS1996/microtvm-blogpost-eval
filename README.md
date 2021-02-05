@@ -4,15 +4,15 @@
 
 MicroTVM is an effort to run TVM on bare-metal microcontrollers. You can read more about the current
 design in the original [Standalone microTVM Roadmap](https://discuss.tvm.apache.org/t/rfc-tvm-standalone-tvm-roadmap/6987).
-This repo shows you how to run CIFAR10-CNN on the host machine and on an [STM Nucleo-F746ZG development board](
-https://www.st.com/en/evaluation-tools/nucleo-f746zg.html).
+This repo shows you how to run CIFAR10-CNN on the host machine and on an [STM Nucleo-L496ZG development board](
+https://www.st.com/en/evaluation-tools/nucleo-L496zg.html).
 
 ![MicroTVM Performance graph](graph.png)
 
 ## Hardware you will need
 
 * A machine capable of running the [microTVM Reference Virtual Machines](https://tvm.apache.org/docs/tutorials/micro/micro_reference_vm.html#sphx-glr-tutorials-micro-micro-reference-vm-py), or a Linux machine with TVM and Zephyr installed.
-* [STM Nucleo-F746ZG development board](https://www.st.com/en/evaluation-tools/nucleo-f746zg.html)
+* [STM Nucleo-L496ZG development board](https://www.st.com/en/evaluation-tools/nucleo-l496zg.html)
     * Autotuning can be sped up by adding more of these development boards.
 * micro USB cable
 
@@ -91,6 +91,8 @@ Copy the `127.0.0.1` URL from your console to your browser. This should bring up
 `tutorial/standalone_utvm.ipynb` and you should be set.
 
 ## Running standalone
+
+NOTE: This is not supported on the Nucleo L496ZG due to limited device capabilities (not enough SRAM).
 
 You can also run the Relay CIFAR10 model standalone on-device. First, translate the model into C in the standalone project:
 
